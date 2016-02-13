@@ -1,5 +1,15 @@
-CVpal, a cheap and cheerful USB to CV/Gate interface.
-An additional CVpal mode, a x0x heart control, is in progress to replace Channel 8. Channel 8 was originally MonoCV/Gate with CC conversion of CC02.
+Modified firmware for CVpal, a cheap and cheerful USB to CV/Gate interface.
+
+An additional CVpal mode is included in order to faciliate easy interfacing with the x0x-heart Eurorack format synthesizer module (http://www.openmusiclabs.com/projects/x0x-heart/).
+
+The x0x-heart mode is now Channel 8, which was originally MonoCV/Gate with CC conversion of CC02. Additionally, the USB device name is now 'X0Xpal' rather than 'cvpal', in order to allow operation alongside other non-modified cvpal units on the same computer.
+
+Channel 8 Outputs, Mono CV and Gate and Accent and Slide:
+
+OUT 1: Note CV
+OUT 2: 'Accent' gate, goes high when note velocity is greater than or equal to 100
+GATE 1: Gate
+GATE 2: 'Slide' gate, goes high when played or sequenced notes overlap
 
 Original developer: Olivier Gillet (ol.gillet@gmail.com)
 
